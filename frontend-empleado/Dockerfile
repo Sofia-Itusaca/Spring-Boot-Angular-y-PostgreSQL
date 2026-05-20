@@ -2,11 +2,11 @@ FROM node:20 AS build
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY frontend-empleado/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY frontend-empleado/ .
 
 RUN npm run build
 
