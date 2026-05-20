@@ -1,0 +1,16 @@
+# Maven
+apache-maven-3.9.16-bin/
+
+# Angular
+node_modules/
+dist/
+
+# Spring Boot
+target/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
