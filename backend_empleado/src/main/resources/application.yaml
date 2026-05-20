@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/db_taller
+    url: jdbc:postgresql://sofia-itusaca-postgresempleado-3akzwd:5432/db_taller
     username: postgres
     password: 12345678
     driver-class-name: org.postgresql.Driver
@@ -14,4 +14,4 @@ spring:
         format_sql: true
 
 server:
-  port: 8082
+  port: 3408
