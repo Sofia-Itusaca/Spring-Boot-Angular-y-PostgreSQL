@@ -2,13 +2,13 @@ FROM node:20 AS build
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY frontend-empleado/package*.json ./
 
 RUN npm install --legacy-peer-deps
 
-COPY . .
+COPY frontend-empleado/ .
 
-RUN npm run build
+RUN npm run build -- --configuration production
 
 FROM nginx:alpine
 
